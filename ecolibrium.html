@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ecolibrium</title>
+  </head>
+  <body><audio src="file:///D:/musica%20y%20audios/musica/elec-rock/Gravity%27s%20rainbow.mp3"
+
+      preload="none" controls="controls" autoplay="autoplay" loop="loop"></audio>
+
+    <p>Cantidad de Manhare en tu ecosistema: <input name="numeroManhare" id="numeroManhare" type="number"></p>
+    <p>Cantidad de manhare en tu ecosistema: <input name="numeroManha" type="number"></p>
+    <p><input name="botonCalcular" id="botonCalcular" value="Calcular " type="button"><br>
+    </p>
+    <table style="width: 100%" border="1">
+      <tbody>
+        <tr>
+          <td style="width: 213.767px;">especie</td>
+          <td style="width: 154.25px;">cantidad</td>
+          <td style="width: 154.25px;">producción vegetal</td>
+          <td style="width: 131.633px;">producción mineral</td>
+          <td style="width: 136.05px;">producción hidrica</td>
+        </tr>
+        <tr>
+          <td>Manhare</td>
+          <td><span id="numeroManhareCuadro">#manhare</span><br>
+          </td>
+          <td><br>
+          </td>
+          <td><br>
+          </td>
+          <td><br>
+          </td>
+        </tr>
+        <tr>
+          <td><br>
+          </td>
+          <td><br>
+          </td>
+          <td><br>
+          </td>
+          <td><br>
+          </td>
+          <td><br>
+          </td>
+        </tr>
+        <tr>
+          <td><br>
+          </td>
+          <td><br>
+          </td>
+          <td><br>
+          </td>
+          <td><br>
+          </td>
+          <td><br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p><br>
+    </p>
+    <script>
+      function entregarNumeros(){
+        var numeroManhare = document.getElementById("numeroManhare");
+        manhareNumero2 = (numeroManhare.value);
+        var d = document.getElementById("dia");
+        dia = (d.value);
+        var m = document.getElementById("mes");
+        mes = (m.value);
+        var a = document.getElementById("anho");
+        anho = (a.value);
+
+        document.getElementById("numeroManhareCuadro").innerHTML = manhareNumero2;
+      }
+  
+      var numeroManhareCuadro = document.getElementById("numeroManhareCuadro");
+      var b = document.getElementById("botonCalcular");
+      b.addEventListener("click", entregarNumeros);
+
+        /*
+        let numeroManhare = document.getElementById("numeroManhare")
+
+        function adquirirInformacion(){
+          let botonCalcularjs = document.getElementById("botonCalcular")
+          botonCalcularjs.addEventListener("click" ,mostrarInfoCuadro)
+        }
+
+        function mostrarInfoCuadro() {
+          document.getElementById("numeroManhareCuadro").innerHTML = numeroManhare
+        }
+        document.write(numeroManhare)
+        */
+    </script>
+  </body>
+</html>
